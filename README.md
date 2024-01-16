@@ -4,6 +4,8 @@ Small PCB for a Raspberry Pi Pico to 2x5 1.27mm pin socket.<br>
 
 <img src=https://github.com/shufps/raspi-pico-dap/assets/3079832/b1f20629-d737-4bdf-a932-fb5c4001894b width=300px>
 
+**note**: This works best with a PCB thickness of 0.8mm
+
 SWD Pinout:<br>
 
 ![image](https://github.com/shufps/raspi-pico-dap/assets/3079832/17f463d0-9c8e-42b3-9b7a-456a66526952)
