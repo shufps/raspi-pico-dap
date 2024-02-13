@@ -20,4 +20,21 @@ Digikey parts:<br>
 2648-SC0915CT-ND<br>
 <img src=https://github.com/shufps/raspi-pico-dap/assets/3079832/f8ba36de-ad2e-407d-8181-f5979e96ee4d width=200px>
 
+## Install probe-rs
 
+```bash
+# install probe-rs
+curl --proto '=https' --tlsv1.2 -LsSf https://github.com/probe-rs/probe-rs/releases/latest/download/probe-rs-installer.sh | sh
+```
+
+It is also suggested to install the udev rules:
+```
+# /etc/udev/rules.d/99-pico.rules
+#picoprobe
+SUBSYSTEM=="usb", ATTRS{idVendor}=="2e8a", MODE="0666"
+```
+
+After adding execute following lines and disconnect and connect the USB device:
+```
+sudo udevadm control --reload-rules &&  sudo udevadm trigger 
+```
